@@ -93,7 +93,7 @@ contract ContratoTareas {
 }
 ```
 
-Una vez creado, nos situamos en la carpeta _migrations_ y crearemos un fichero con el nombre _`1_deploy_ContratoTareas`_ con el siguiente contenido:
+Una vez creado, nos situamos en la carpeta _migrations_ y crearemos un fichero con el nombre _`1_deploy_ContratoTareas.js`_ con el siguiente contenido:
 
 ```js
 const ContratoTareas = artifacts.require("ContratoTareas.sol");
