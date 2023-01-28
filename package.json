@@ -1,0 +1,22 @@
+{
+  "name": "ethereum-javascript-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "truffle test"
+  },
+  "keywords": [],
+  "author": "Marcos Pajón Ferreiro",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/contract": "^4.3.21",
+    "bootstrap": "^5.0.2",
+    "chai": "^4.3.4",
+    "lite-server": "^2.6.1"
+  }
+}

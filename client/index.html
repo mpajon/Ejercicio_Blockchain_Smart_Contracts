@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Tareas | Aplicación Distribuida </title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Google icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="card card-body bg-dark rounded-0 mb-4">
+            <h1>
+              <span class="material-icons"> grid_view </span>
+              Gestor de tareas
+            </h1>
+            <h6 class="text-muted">Aplicación Descentralizada</h6>
+            <div class="d-flex align-items-center">
+              <span class="material-icons"> account_balance_wallet </span>
+              <span class="ms-2">Wallet</span>
+            </div>
+            <span id="account"></span>
+          </div>
+
+          <form id="tareaForm" class="card card-body bg-dark">
+            <h4>Guarda una tarea</h4>
+            <input
+              type="text"
+              id="titulo"
+              class="form-control bg-dark border-0 rounded-0 text-light my-4"
+              placeholder="Escribe una nueva tarea"
+              autofocus
+            />
+            <textarea
+              id="descripcion"
+              rows="2"
+              class="form-control bg-dark border-0 rounded-0 text-light my-4"
+              placeholder="¿Qué tengo que hacer ....?"
+            ></textarea>
+            <button class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+        <div class="col-md-7">
+          <div id="listaTareas"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="/libs/web3/dist/web3.min.js"></script> -->
+    <script src="/libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+  </body>
+</html>
